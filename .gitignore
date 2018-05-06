@@ -1,0 +1,6 @@
+*lock.*
+node_modules
+upload_files
+coverage
+src/.env
+.~*

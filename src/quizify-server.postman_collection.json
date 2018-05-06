@@ -1,0 +1,2531 @@
+{
+	"id": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+	"name": "quizify-server",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [],
+	"folders_order": [
+		"25f997a6-c4d6-473d-833e-e213d5f1c4eb",
+		"7644252d-c688-4932-8635-6691f3ac6863",
+		"acd00940-81af-49a0-9f91-b77d81091a28",
+		"6924161d-46da-4503-a138-3f0d2c869432",
+		"16ddebef-889b-4fcf-acda-0442dff13643",
+		"7ea52511-f7fb-4308-8882-3c32a7a37415",
+		"9c89fc9d-72bd-4f98-9046-9dc8fc8a6fab",
+		"132a4f69-ff83-4456-88e8-eab2fd9a9bf8",
+		"b465f377-b341-400e-ad66-0fc754af7fb9",
+		"e78ada17-a3a6-44a8-9b9e-66506655470f",
+		"066f144e-e56b-436b-bc30-7b6c7a4766cd",
+		"0a3b3846-e9b2-45b8-a7ed-9bb4548da125",
+		"66124e4b-7d11-4f90-9d88-4740f075eb38"
+	],
+	"folders": [
+		{
+			"id": "25f997a6-c4d6-473d-833e-e213d5f1c4eb",
+			"name": "Authentication",
+			"description": "In this we are check for the authentication api for various error and passing condition.",
+			"auth": null,
+			"events": null,
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"dc37a05a-7c39-402c-9efa-a10e349e4bb5",
+				"0014d6e6-7acd-4ac8-9057-268c0bdc3263",
+				"4abab63b-8dee-44b1-8ef8-bdad559b1f27"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "7644252d-c688-4932-8635-6691f3ac6863",
+			"name": "Campaign",
+			"description": "In this we are check for the campaign get and post api for inserting and retrieving the campaign details.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "52421c44-4b40-4ac6-bbf8-49666b1af7c9",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "dbd83497-00df-4436-a322-4b75e61cff98",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"91e715be-7336-469b-9247-fea21e775e08",
+				"3a13bc0c-a020-4bfc-8558-fc9e544f1bb6",
+				"08c9b0cb-a637-4b58-96fb-2454713da55b",
+				"7674f2cc-3744-4c1f-8a02-bfb4a12ed695",
+				"6a43f1c9-b338-4fa0-8b21-058a83eb0b18",
+				"6f9b2198-1ce9-47e7-b940-d81a85ad4a6b"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "6924161d-46da-4503-a138-3f0d2c869432",
+			"name": "Group",
+			"description": "In this we check group route for retrieving the group items to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "10ae0c08-df38-4330-9e04-0b4fd1675620",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "18137140-746e-416c-862c-246721e55318",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"24f26a31-bbda-46c0-9113-770fecf8defe",
+				"436f2aba-dfa1-4c7f-9949-a80c346dce3c"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "66124e4b-7d11-4f90-9d88-4740f075eb38",
+			"name": "ImportCSV",
+			"description": "In this we check csv route to insert question from csv file for verifying various success and failure situations.\n",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "adba45f0-ff8d-4441-a8d2-1f2d4e4bbd05",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "88d38f56-cde3-4322-a2f7-9039bea8d6a7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"b11bb2e8-3bfb-4fc0-86bc-f9a0d414d79b",
+				"2ac2de3c-0f4f-4958-abc7-11ae5d390aba"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "16ddebef-889b-4fcf-acda-0442dff13643",
+			"name": "Level",
+			"description": "In this we check level route for retrieving the level items to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f2fed86a-fc40-45d9-a5df-1632240f5ee9",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4d6106ce-551f-44aa-b75c-d84029382b37",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"1238472a-5b74-4eff-8e14-c6fae093de17",
+				"cb9a1839-61a6-438e-a9d5-6a27f3e692b7"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "7ea52511-f7fb-4308-8882-3c32a7a37415",
+			"name": "Load State",
+			"description": "In this we check load_state route for retrieving the load state items to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "707b0f59-b30f-4a4b-bff8-ec692d41e098",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "86fd0f82-0bb3-4630-8eba-a8ca25855304",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"9f4d2614-5781-4590-afe3-67e4608ee614",
+				"d37d7ccf-a01f-47a2-a6d0-bb760d00db3f"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "9c89fc9d-72bd-4f98-9046-9dc8fc8a6fab",
+			"name": "Negative",
+			"description": "In this we check negative route for retrieving the negative weightage to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cac05d25-b261-477c-a3cd-029c8a9f5634",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "23e9ec4b-a3ef-4d7e-b333-f68e3d99092e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"58c71945-f1ac-4ca7-a0d4-2630702fb6e8",
+				"824c3428-7df4-4747-86cd-6e031f223003"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "132a4f69-ff83-4456-88e8-eab2fd9a9bf8",
+			"name": "Option",
+			"description": "In this we check option route for retrieving the options to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cac05d25-b261-477c-a3cd-029c8a9f5634",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "23e9ec4b-a3ef-4d7e-b333-f68e3d99092e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"12161d9b-c6d4-4e68-919c-8e95684a9b4b",
+				"f4dc7003-c40c-420e-bee2-0001e404a7d8"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "acd00940-81af-49a0-9f91-b77d81091a28",
+			"name": "Questions",
+			"description": "In this we are check for the question get and post api for inserting and retrieving the question details.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "52421c44-4b40-4ac6-bbf8-49666b1af7c9",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "dbd83497-00df-4436-a322-4b75e61cff98",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"90ac7abd-4fbf-4e77-ad86-7b4cacffde1e",
+				"3ecf641e-4966-473e-b08e-31d0e2c9565a",
+				"6e52f8a7-504d-40af-a29d-65b5a8b1b802",
+				"1b20d9a0-dc2c-4f8e-9ad3-3a62406079d0"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "066f144e-e56b-436b-bc30-7b6c7a4766cd",
+			"name": "Quiz",
+			"description": "In this we check quiz route for retrieving the quizes to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cac05d25-b261-477c-a3cd-029c8a9f5634",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "23e9ec4b-a3ef-4d7e-b333-f68e3d99092e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"d68bde45-24d4-49b4-bf4d-9cade15cd0fc",
+				"0ec8b233-4ef5-4a46-95a0-194eb95a5fcf",
+				"c60e706e-29e8-47d4-a85e-4b51321d8785",
+				"290e5f66-5764-496a-b328-d1ebfc63f29d"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "b465f377-b341-400e-ad66-0fc754af7fb9",
+			"name": "Type",
+			"description": "In this we check type route for retrieving the types to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cac05d25-b261-477c-a3cd-029c8a9f5634",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "23e9ec4b-a3ef-4d7e-b333-f68e3d99092e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"ff1b925d-9f6e-4816-9fff-641bf4313c9d",
+				"3ad05ab3-c48f-455a-a1cd-5b44b159b93e"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "0a3b3846-e9b2-45b8-a7ed-9bb4548da125",
+			"name": "Users",
+			"description": "In this we check user route for retrieving and post the new users to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cac05d25-b261-477c-a3cd-029c8a9f5634",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "23e9ec4b-a3ef-4d7e-b333-f68e3d99092e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"1475ee8c-d5e6-4060-9ad5-0a15ff04be2c",
+				"b47c1c26-0491-48da-b20c-0e5ea7e5f5e4"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "e78ada17-a3a6-44a8-9b9e-66506655470f",
+			"name": "weightage",
+			"description": "In this we check weightage route for retrieving the weightage to verify various passing & error conditions.",
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cac05d25-b261-477c-a3cd-029c8a9f5634",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "23e9ec4b-a3ef-4d7e-b333-f68e3d99092e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"collection": "cefd75d6-f3f5-4ea6-bfbd-d8270453c222",
+			"folder": null,
+			"order": [
+				"bd0a4ef9-d475-4993-9ccf-cd5195cbc499",
+				"a936b375-d0f9-4fdc-8de1-2f000e977f76"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "0014d6e6-7acd-4ac8-9057-268c0bdc3263",
+			"name": "With Invalid credentials - Wrong Identifier",
+			"url": "{{baseURL}}/{{apiBasePath}}/auth",
+			"description": "It should return 401 Unauthorized with correct error msg.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5292aaed-a832-4f9c-a921-ab9711488044",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Gives correct error msg on invalid identifier\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.errors.form).to.eql(\"Invalid Credentials\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "25f997a6-c4d6-473d-833e-e213d5f1c4eb",
+			"rawModeData": "{\n\t\"identifier\": \"FarjiIdentifier\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "08c9b0cb-a637-4b58-96fb-2454713da55b",
+			"name": "post campaign - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/campaign",
+			"description": "It should return a status code 200 OK .",
+			"data": [
+				{
+					"key": "image",
+					"description": "",
+					"type": "file",
+					"src": "update this to the path of the image you want to upload",
+					"enabled": true
+				},
+				{
+					"key": "campaign_name",
+					"value": "test_campaign",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel_name",
+					"value": "test_channel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "status",
+					"value": "ACTIVE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "details",
+					"value": "These are the details for the test campaign",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category",
+					"value": "test_category",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": ""
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2f04d1bd-6e18-4dfa-bb1c-f000e94e48ec",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give success message true on successful post\", function(){",
+							"    pm.expect(jsonData.success).to.eql(true);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"folder": "7644252d-c688-4932-8635-6691f3ac6863",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0ec8b233-4ef5-4a46-95a0-194eb95a5fcf",
+			"name": "post quiz - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/quiz",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "066f144e-e56b-436b-bc30-7b6c7a4766cd",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "12161d9b-c6d4-4e68-919c-8e95684a9b4b",
+			"name": "list options - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/option",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "132a4f69-ff83-4456-88e8-eab2fd9a9bf8",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1238472a-5b74-4eff-8e14-c6fae093de17",
+			"name": "list level - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/level",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "16ddebef-889b-4fcf-acda-0442dff13643",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1475ee8c-d5e6-4060-9ad5-0a15ff04be2c",
+			"name": "get user",
+			"url": "{{baseURL}}/{{apiBasePath}}/users/zee",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ab418a3d-6ed7-455e-9202-b813797f7f39",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of user list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"user\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in user list\", function(){",
+							"    pm.expect(jsonData.user).to.have.property(\"username\");",
+							"    pm.expect(jsonData.user).to.have.property(\"email\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "0a3b3846-e9b2-45b8-a7ed-9bb4548da125",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1b20d9a0-dc2c-4f8e-9ad3-3a62406079d0",
+			"name": "list questions - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/question/1",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "acd00940-81af-49a0-9f91-b77d81091a28",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "24f26a31-bbda-46c0-9113-770fecf8defe",
+			"name": "list group - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/group",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "6924161d-46da-4503-a138-3f0d2c869432",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "290e5f66-5764-496a-b328-d1ebfc63f29d",
+			"name": "post quiz - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/quiz",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3d62751f-3eda-4232-9f8e-7be0a9bf35dd",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"",
+							"pm.test(\"Check for the availability of keys in response\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"messageCode\");",
+							"    pm.expect(jsonData).to.have.property(\"message\");",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"check for the message success fpr response\", function(){",
+							"    pm.expect(jsonData.message).to.equal(\"Success\");",
+							"})"
+						]
+					}
+				}
+			],
+			"folder": "066f144e-e56b-436b-bc30-7b6c7a4766cd",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2ac2de3c-0f4f-4958-abc7-11ae5d390aba",
+			"name": "upload csv - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/csv",
+			"description": "It should return a status 200 OK\".",
+			"data": [
+				{
+					"key": "csvfile",
+					"description": "",
+					"type": "file",
+					"src": "update this to your sample csv file available as quizify-server/src/sample.csv",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b6e9c0e5-31cb-4a3c-a369-9a47d963594b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the response\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"success\");",
+							"});",
+							"",
+							"pm.test(\"Check for the success value\", function(){",
+							"    pm.expect(jsonData.success).to.equal(true);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "66124e4b-7d11-4f90-9d88-4740f075eb38",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3a13bc0c-a020-4bfc-8558-fc9e544f1bb6",
+			"name": "post campaign - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/campaign",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "7644252d-c688-4932-8635-6691f3ac6863",
+			"rawModeData": "{\n\t\"campaign_name\": \"test_campaign\",\n\t\"channel_name\": \"test_channel\",\n\t\"category\": \"test_category\",\n\t\"status\": \"test_status\",\n\t\"details\": \"test_details\"\n}",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3ad05ab3-c48f-455a-a1cd-5b44b159b93e",
+			"name": "list type - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/type",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d32a2462-87fb-4d7f-b2b6-1373e678e18f",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of type list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"types\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in type list\", function(){",
+							"    pm.expect(jsonData.types[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.types[0]).to.have.property(\"type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "b465f377-b341-400e-ad66-0fc754af7fb9",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3ecf641e-4966-473e-b08e-31d0e2c9565a",
+			"name": "post question - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/question",
+			"description": "It should return a status code 200 OK .",
+			"data": [
+				{
+					"key": "qstr",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qtid",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qchcat",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qteam",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qcatid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qendtime",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qnegMark",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qstarttime",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qweightage",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qlevel",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qopt1",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qopt2",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qopt3",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qopt4",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qanswer",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qflag",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qgroup",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qformat",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "setid",
+					"value": "testdata",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": ""
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1d371365-f183-46b6-9025-24e219806e4c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give message Success on successful post\", function(){",
+							"    pm.expect(jsonData.message).to.eql(\"Success\");",
+							"    pm.expect(jsonData.messageCode).to.eql(200);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"folder": "acd00940-81af-49a0-9f91-b77d81091a28",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "436f2aba-dfa1-4c7f-9949-a80c346dce3c",
+			"name": "list group - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/group",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6229af51-b83d-4c7f-bad2-d48ef3b0653e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of group list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"groups\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in groups\", function(){",
+							"    pm.expect(jsonData.groups[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.groups[0]).to.have.property(\"gname\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "6924161d-46da-4503-a138-3f0d2c869432",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4abab63b-8dee-44b1-8ef8-bdad559b1f27",
+			"name": "With Invalid credentials - Wrong Password",
+			"url": "{{baseURL}}/{{apiBasePath}}/auth",
+			"description": "It should return 401 Unauthorized with correct error msg.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "538a18fc-9aef-4a82-969a-c0b1301e6e7b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Gives correct error msg on invalid password\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.errors.form).to.eql(\"Invalid Credentials\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "25f997a6-c4d6-473d-833e-e213d5f1c4eb",
+			"rawModeData": "{\n  \"identifier\": \"{{identifier}}\",\n  \"password\": \"hello world\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "58c71945-f1ac-4ca7-a0d4-2630702fb6e8",
+			"name": "list negative weightage - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/negative",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "9c89fc9d-72bd-4f98-9046-9dc8fc8a6fab",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6a43f1c9-b338-4fa0-8b21-058a83eb0b18",
+			"name": "list campaigns - filter",
+			"url": "{{baseURL}}/{{apiBasePath}}/campaign/1?filter=ACTIVE",
+			"description": "It should return 200 OK with campaign list along with filter status.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "filter",
+					"value": "ACTIVE",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c0c68d32-9e58-41ad-95de-f4d9fbfd30a4",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"",
+							"",
+							"",
+							"pm.test(\"Check for campaigns availability in jsonData\", function(){",
+							"    pm.expect(jsonData).to.have.property('campaigns');",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in campaigns\", function(){",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"campaign_name\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"channel_name\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"category\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"details\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"status\");",
+							"})"
+						]
+					}
+				}
+			],
+			"folder": "7644252d-c688-4932-8635-6691f3ac6863",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6e52f8a7-504d-40af-a29d-65b5a8b1b802",
+			"name": "list questions - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/question/1",
+			"description": "It should return 200 OK with question list.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf4679fe-0cdd-44b5-b54a-1bc1d41e8161",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"pm.test(\"Check for the length of response body\", function(){",
+							"    pm.expect(jsonData.questions).to.have.lengthOf(6);",
+							"});",
+							"",
+							"pm.test(\"Check for campaigns availability in jsonData\", function(){",
+							"    pm.expect(jsonData).to.have.property('questions');",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in questionss\", function(){",
+							"    pm.expect(jsonData.questions[0]).to.have.property(\"qstr\");",
+							"    pm.expect(jsonData.questions[0]).to.have.property(\"qformat\");",
+							"    pm.expect(jsonData.questions[0]).to.have.property(\"qnegMark\");",
+							"    pm.expect(jsonData.questions[0]).to.have.property(\"qweightage\");",
+							"    pm.expect(jsonData.questions[0]).to.have.property(\"qcatid\");",
+							"})"
+						]
+					}
+				}
+			],
+			"folder": "acd00940-81af-49a0-9f91-b77d81091a28",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6f9b2198-1ce9-47e7-b940-d81a85ad4a6b",
+			"name": "list campaigns - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/campaign/1",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "7644252d-c688-4932-8635-6691f3ac6863",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7674f2cc-3744-4c1f-8a02-bfb4a12ed695",
+			"name": "list campaigns - page number",
+			"url": "{{baseURL}}/{{apiBasePath}}/campaign/1",
+			"description": "It should return 200 OK with campaign list of specified page number.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e64113a0-0d69-4715-ae0a-43f134e0613f",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"",
+							"",
+							"pm.test(\"Check for the length of response body\", function(){",
+							"    pm.expect(jsonData.campaigns).to.have.lengthOf(4);",
+							"});",
+							"",
+							"pm.test(\"Check for campaigns availability in jsonData\", function(){",
+							"    pm.expect(jsonData).to.have.property('campaigns');",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys inn campaigns\", function(){",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"campaign_name\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"channel_name\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"category\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"details\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"status\");",
+							"})"
+						]
+					}
+				}
+			],
+			"folder": "7644252d-c688-4932-8635-6691f3ac6863",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "824c3428-7df4-4747-86cd-6e031f223003",
+			"name": "list negative weightage - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/negative",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f70e1d58-82c9-4118-88ed-10acff56d155",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of negative weightage list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"negative\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in negative weightages\", function(){",
+							"    pm.expect(jsonData.negative[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.negative[0]).to.have.property(\"negative\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "9c89fc9d-72bd-4f98-9046-9dc8fc8a6fab",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "90ac7abd-4fbf-4e77-ad86-7b4cacffde1e",
+			"name": "post question - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/question",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "acd00940-81af-49a0-9f91-b77d81091a28",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "91e715be-7336-469b-9247-fea21e775e08",
+			"name": "list campaigns - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/campaign/1",
+			"description": "It should return 200 OK with campaign list.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ee09acb6-57e5-43e8-89bc-f24fe4c9ec6c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of keys inn campaigns\", function(){",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"campaign_name\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"channel_name\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"category\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"details\");",
+							"    pm.expect(jsonData.campaigns[0]).to.have.property(\"status\");",
+							"})"
+						]
+					}
+				}
+			],
+			"folder": "7644252d-c688-4932-8635-6691f3ac6863",
+			"rawModeData": "{\n  \"identifier\": \"{{identifier}}\",\n  \"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9f4d2614-5781-4590-afe3-67e4608ee614",
+			"name": "list state - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/load_state",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "7ea52511-f7fb-4308-8882-3c32a7a37415",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a936b375-d0f9-4fdc-8de1-2f000e977f76",
+			"name": "list weightage - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/weightage",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b8626dd-619f-4d9e-96d4-19273e384d82",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of weightage list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"weightages\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in type list\", function(){",
+							"    pm.expect(jsonData.weightages[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.weightages[0]).to.have.property(\"weightage\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "e78ada17-a3a6-44a8-9b9e-66506655470f",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b11bb2e8-3bfb-4fc0-86bc-f9a0d414d79b",
+			"name": "upload csv - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/csv",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "66124e4b-7d11-4f90-9d88-4740f075eb38",
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b47c1c26-0491-48da-b20c-0e5ea7e5f5e4",
+			"name": "post user",
+			"url": "{{baseURL}}/{{apiBasePath}}/users",
+			"description": "It should return a status 200 OK\".",
+			"data": [
+				{
+					"key": "name",
+					"value": "zeeshan",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "zoo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "Admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "zoo@mail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "passwordConfirmation",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e163abb1-f06a-4570-a9a9-85fb4b38dc75",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"",
+							"pm.test(\"Check for the availability of keys in response\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"success\");",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"check for the message success fpr response\", function(){",
+							"    pm.expect(jsonData.success).to.equal(true);",
+							"})"
+						]
+					}
+				}
+			],
+			"folder": "0a3b3846-e9b2-45b8-a7ed-9bb4548da125",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bd0a4ef9-d475-4993-9ccf-cd5195cbc499",
+			"name": "list weightage - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/weightage",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "e78ada17-a3a6-44a8-9b9e-66506655470f",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c60e706e-29e8-47d4-a85e-4b51321d8785",
+			"name": "list quizzes - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/quiz/1",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "29beb41a-72ee-4b10-8849-369f12eff8b8",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of quiz list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"quiz\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in quizzes list\", function(){",
+							"    pm.expect(jsonData.quiz[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.quiz[0]).to.have.property(\"setid\");",
+							"    pm.expect(jsonData.quiz[0]).to.have.property(\"campaign_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "066f144e-e56b-436b-bc30-7b6c7a4766cd",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cb9a1839-61a6-438e-a9d5-6a27f3e692b7",
+			"name": "list level - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/level",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b44bfd83-8fdc-4467-ac35-330e2227b16a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of level list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"levels\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in levels\", function(){",
+							"    pm.expect(jsonData.levels[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.levels[0]).to.have.property(\"level\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "16ddebef-889b-4fcf-acda-0442dff13643",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d37d7ccf-a01f-47a2-a6d0-bb760d00db3f",
+			"name": "list state - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/load_state",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "118607f8-7b21-4c1f-a462-a1e7d48de0d5",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of states list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"states\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in states\", function(){",
+							"    pm.expect(jsonData.states[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.states[0]).to.have.property(\"state\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "7ea52511-f7fb-4308-8882-3c32a7a37415",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d68bde45-24d4-49b4-bf4d-9cade15cd0fc",
+			"name": "list quizzes - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/quiz/1",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "066f144e-e56b-436b-bc30-7b6c7a4766cd",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "dc37a05a-7c39-402c-9efa-a10e349e4bb5",
+			"name": "With Valid Credentials",
+			"url": "{{baseURL}}/{{apiBasePath}}/auth",
+			"description": "It should return 200 OK with valid jwt in body.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce388d47-333f-4081-a516-b247bf292609",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"JWT token exists\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.token).to.not.eql(undefined);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"pm.environment.set(\"token\", jsonData.token);"
+						]
+					}
+				}
+			],
+			"folder": "25f997a6-c4d6-473d-833e-e213d5f1c4eb",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f4dc7003-c40c-420e-bee2-0001e404a7d8",
+			"name": "list options - with token",
+			"url": "{{baseURL}}/{{apiBasePath}}/option",
+			"description": "It should return a status 200 OK\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "51e8eecc-ffd0-4058-8768-521641da077b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for the availability of option list\", function(){",
+							"    pm.expect(jsonData).to.have.property(\"options\");",
+							"});",
+							"",
+							"pm.test(\"Check for the availability of keys in options list\", function(){",
+							"    pm.expect(jsonData.options[0]).to.have.property(\"id\");",
+							"    pm.expect(jsonData.options[0]).to.have.property(\"option\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "132a4f69-ff83-4456-88e8-eab2fd9a9bf8",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\nauthorization: Bearer {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ff1b925d-9f6e-4816-9fff-641bf4313c9d",
+			"name": "list type - without token",
+			"url": "{{baseURL}}/{{apiBasePath}}/type",
+			"description": "It should return an error message with \"No token provided\".",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffebe8c2-7d87-4cad-9fe5-72f5147c3b03",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Give correct error message when token is not available\", function(){",
+							"    pm.expect(jsonData.error).to.eql(\"No token provided\");",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "b465f377-b341-400e-ad66-0fc754af7fb9",
+			"rawModeData": "{\n\t\"identifier\": \"{{identifier}}\",\n\t\"password\": \"{{password}}\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
